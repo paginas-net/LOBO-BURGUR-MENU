@@ -96,8 +96,8 @@ p{
 table{
     margin-top: 20px; /*margen superior*/
     position: relative;
-    margin-left: 15% ;/*ajustar la posicion en el eje X */
-    width: 70%; /*ancho de tabla*/
+    margin-left: 10% ;/*ajustar la posicion en el eje X */
+    width: 80%; /*ancho de tabla*/
     color: black; /*color de bardes*/
     border: 5px solid rgb(107, 93, 93); /*ancho y tipo de borde*/
     
