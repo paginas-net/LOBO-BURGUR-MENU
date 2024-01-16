@@ -9,7 +9,7 @@ body{
     /*ingresamos la imagen*/
   background-image: url(fondo.png);
   /*hacemos que no sse repita*/
-  background-repeat: no-repeat;
+  background-repeat: repeat;
   /*centrar la imagen*/
   background-position: center ;
   /*ajustar la posicion eje x, eje y (centrar= center center)*/
@@ -19,7 +19,7 @@ body{
   height: auto;
   
   /* evitar el movimiento de la imagen de fondo*/
-  background-attachment: fixed;
+  /*background-attachment: fixed;*/
   /*para que la imagen cubra la pantalla*/
   background-size: 119%;
 
@@ -104,7 +104,7 @@ img{
 p{
     position:relative;
     text-align: center;
-    color: rgb(253, 250, 250);
+    color: black;
     font-family:sans-serif;
     font-size: 24px;
     max-width: 90%;
@@ -175,7 +175,7 @@ img, table {
     view-timeline-axis: block ;
      animation-timeline: --image ;
      animation-name: show ;
-     animation-range: entry 25% cover 30%; /* el inicio se da con
+     animation-range: entry 25px cover 30px; /* el inicio se da con
       la imagen al tanto% y se ve en su totalidad al tanto% */
      animation-fill-mode: both;/*que sea en reves tambien el efecto */
 
@@ -190,6 +190,9 @@ img, table {
      esté por encima del resto del contenido */
 
 
+}
+DIV{
+    text-align: center;
 }
 
 
