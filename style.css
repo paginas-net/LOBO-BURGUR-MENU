@@ -29,7 +29,7 @@ body{
 header{
     position: fixed;
     width: 100%;
-    background-color:black;
+    background-color:rgb(243, 5, 5);
     z-index: 900; /* Asegura que el menú
      esté por encima del resto del contenido */
      
@@ -37,6 +37,7 @@ header{
 
  .logo img {
    margin-top: 5px; /* Ajusta la altura según tu logo */
+   margin-left: -70%;
     width: 30%;
     height: 30%; 
   }
@@ -68,7 +69,7 @@ header{
   a{
     color: rgb(250, 250, 250);
     text-decoration: none;
-    font-size: 20px;
+    font-size: 200%;
  
   }
   /*aca se acomoda a que color 
@@ -83,7 +84,7 @@ h1{
     text-align: center;
     color: red;
     font-family:Arial, Helvetica, sans-serif;
-    font-size: 40px;
+    font-size: 250%;
     
 }
 img{
@@ -104,9 +105,9 @@ img{
 p{
     position:relative;
     text-align: center;
-    color: black;
+    color: rgb(253, 251, 251);
     font-family:sans-serif;
-    font-size: 24px;
+    font-size: 150%;
     max-width: 90%;
     margin-left: 18px;
 
@@ -125,16 +126,16 @@ h6{
     /*descripciones*/
     margin-top: 0.5px;
     color: rgb(243, 239, 239);
-    font-size: 19px;
+    font-size: 150%;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    line-height: 20px;
+    line-height: 130%;
     margin-bottom: 20px;
 }
 h3{
     /*precios*/
     margin-top: 1px;
     color: yellow;
-    font-size: 30px;
+    font-size: 200%;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     line-height: 1px;
     margin-bottom: 30px;
@@ -144,8 +145,8 @@ h2{
     /*titulos*/
     color: rgb(248, 245, 245);
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 25px;
-    line-height: 25px;
+    font-size: 200%;
+    line-height: 100%;
     margin-bottom: 15px;
 
 }
@@ -175,7 +176,7 @@ img, table {
     view-timeline-axis: block ;
      animation-timeline: --image ;
      animation-name: show ;
-     animation-range: entry 25px cover 30px; /* el inicio se da con
+     animation-range: entry 25% cover 30%; /* el inicio se da con
       la imagen al tanto% y se ve en su totalidad al tanto% */
      animation-fill-mode: both;/*que sea en reves tambien el efecto */
 
@@ -197,21 +198,7 @@ DIV{
 
 
 
-.domicilio{
-        
-    /*la posision fixed ayuda a fijar el boton y no se mueva con la pantalla*/
-    position:relative;
-    transform: translate3d(-50, -50, 0);
-    /*movemos el div a la isquierda disminuye derecha aumenta.*/
-    left: 85%;
-    /*movemos el div hacia arriba disminuyendo, abajo aumenta.*/
-    top: 0px;
-    /*tamaño del icono*/
-    width: 50px;
-    z-index: 950; /* Asegura que el menú
-     esté por encima del resto del contenido */ 
-    
-}
+
 
 .vinculo{
         
@@ -219,11 +206,12 @@ DIV{
     position: fixed;
     transform: translate3d(-50, -50, 0);
     /*movemos el div a la isquierda disminuye derecha aumenta.*/
-    left: 85%;
+    left: 80%;
     /*movemos el div hacia arriba disminuyendo, abajo aumenta.*/
-    top: 85%;
+    top: 83%;
     /*tamaño del icono*/
-    width: 50px; 
+    width: 13%;
+    height: 13%; 
     
 }
     
