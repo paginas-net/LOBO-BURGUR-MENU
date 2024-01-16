@@ -157,7 +157,7 @@ img, table {
     view-timeline-axis: block ;
      animation-timeline: --image ;
      animation-name: show ;
-     animation-range: entry 15% cover 20%; /* el inicio se da con
+     animation-range: entry 25% cover 30%; /* el inicio se da con
       la imagen al tanto% y se ve en su totalidad al tanto% */
      animation-fill-mode: both;/*que sea en reves tambien el efecto */
 
