@@ -184,17 +184,7 @@ img, table {
 
 
 }
-.futer{
-    
-    margin-top: 5%; /*margen superior*/
-    position:relative;
-    width: 100%;
-    background-color:rgb(41, 41, 41);
-    z-index: 0; /* Asegura que el menú
-     esté por encima del resto del contenido */
 
-
-}
 h5{
     color: yellow;
     margin-left:5% ;
@@ -241,9 +231,9 @@ DIV{
     position: fixed;
     transform: translate3d(-50, -50, 0);
     /*movemos el div a la isquierda disminuye derecha aumenta.*/
-    left: 87%;
+    left: 83%;
     /*movemos el div hacia arriba disminuyendo, abajo aumenta.*/
-    top: 83%;
+    top: 80%;
     /*tamaño del icono*/
     width: 13%;
     height: 13%; 
