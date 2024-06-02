@@ -4,22 +4,25 @@ body{
 background-color: rgb(0, 0, 0);
 
 /* Ingresamos la imagen */
-background-image: url(Menu/Restaurante/Llamativo/Negro/Mostaza.jpg);
+background-image: url(Menu\ Restaurante\ Llamativo\ Negro\ Mostaza.jpg);
 
 /* Repetimos la imagen */
-background-repeat: repeat; /* Cambiar a "repeat" para repetir la imagen si es necesario */
+background-repeat: repeat; /* Cambia a "repeat" si deseas que la imagen se repita */
 
 /* Centramos la imagen */
-background-position: center center;
+background-position: center;
 
-/* Ajustamos la posición (centrar en eje X, eje Y) */
-background-position: 100% 0%;
+/* Ajustamos la posición (eje X, eje Y) */
+background-position: 50% 0%; /* Ajusta la posición horizontalmente según prefieras */
+
+/* Ajustamos el alto de la página */
+height: 100vh; /* Asegura que el alto ocupe el 100% del viewport */
 
 /* Evitamos el movimiento de la imagen de fondo */
 background-attachment: fixed;
 
 /* Cubrimos la pantalla con la imagen */
-background-size: cover; /* Cambiar a "contain" si la imagen debe caber dentro de la pantalla sin recortes */
+background-size: cover; /* Mantiene la relación de aspecto y cubre la pantalla */
 }
 
 
