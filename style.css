@@ -15,7 +15,7 @@ body{
   height: auto;
   
   /* evitar el movimiento de la imagen de fondo*/
-  background-attachment: fixed;
+  display: fixed;
   /*para que la imagen cubra la pantalla*/
   background-size: 219%;
 }
