@@ -7,7 +7,7 @@ body{
   /*hacemos que no sse repita*/
   background-repeat: no-repeat;
   /*centrar la imagen*/
-  background-position: fixed ;
+  background-position: center ;
   /*ajustar la posicion eje x, eje y (centrar= center center)*/
   background-position: 100% 0%;
   /*aca podemos acomodar el espacio de la pagina en caso que la imagen 
@@ -15,9 +15,9 @@ body{
   height: auto;
   
   /* evitar el movimiento de la imagen de fondo*/
-  
+  background-attachment: fixed;
   /*para que la imagen cubra la pantalla*/
-  background-size: 219%;
+  background-size: 100%;
 }
 
 
