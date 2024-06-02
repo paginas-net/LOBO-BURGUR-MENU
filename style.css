@@ -4,6 +4,7 @@ body{
   background-color: rgb(0, 0, 0);
   /*ingresamos la imagen*/
   background-image: url(Menu\ Restaurante\ Llamativo\ Negro\ Mostaza.jpg);
+  background-attachment: fixed;
   /*hacemos que no sse repita*/
   background-repeat: no-repeat;
   /*centrar la imagen*/
