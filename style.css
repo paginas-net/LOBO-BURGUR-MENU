@@ -1,246 +1,255 @@
-body{
-    background-color: black;
-    max-width: 100%; /*maximo de ancho de la pagina*/
-    margin: 0 auto;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    margin-top: 0px; /*margen superior*/
-    margin-bottom: 20%; /*margen inferior*/
 
-    /*ingresamos la imagen*/
-  background-image: url(fondo.png);
+body{
+  /*color de fondo*/
+  background-color: rgb(0, 0, 0);
+  /*ingresamos la imagen*/
+  background-image: url(Menu\ Restaurante\ Llamativo\ Negro\ Mostaza.jpg);
   /*hacemos que no sse repita*/
-  background-repeat: repeat;
+  background-repeat: no-repeat;
   /*centrar la imagen*/
   background-position: center ;
   /*ajustar la posicion eje x, eje y (centrar= center center)*/
-  background-position: center center;
+  background-position: 100% 0%;
   /*aca podemos acomodar el espacio de la pagina en caso que la imagen 
   no se puedaver completa */
   height: auto;
   
   /* evitar el movimiento de la imagen de fondo*/
-  /*background-attachment: fixed;*/
+  background-attachment: fixed;
   /*para que la imagen cubra la pantalla*/
   background-size: 119%;
-
 }
 
 
-header{
-    flex-wrap: nowrap;
+header {
     position: fixed;
-    height: auto;
+    top: 0%;
+    left: 0px;
     width: 100%;
-    background-color:rgb(0, 0, 0);
-    z-index: 900; /* Asegura que el menú
-     esté por encima del resto del contenido */
-     
- }
+    background-color: rgba(220, 224, 0, 0);
+    padding: 10px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000; /* Asegura que el menú esté por encima del resto del contenido */
+  }
 
- .logo img {
-   margin-top: 5px; /* Ajusta la altura según tu logo */
-   margin-left: -70%;
-    width: 45%;
-    height: 45%; 
+  .domicilios{
+    /*letrero junnto al logo de whatsapp*/
+    height: 90px; /* Ajusta la altura según tu logo */
+    left: 68%;
+    font-size: 40px; /*tamaño de letra*/
+    font-family: 'Times New Roman', Times, serif;
   }
- 
- 
-  nav{
-     display: flex;
-     align-items: center;
-     justify-content: space-between;
-     padding-top: 0px; /*superior*/
-     padding-left: 5%; /*izquierda*/
-     padding-right: 5%; /*derecha*/
-     font-weight: bold; /* negrilla*/
- 
+
+  .contacto{
+    /* logo de whatsapp*/
+    height: 7px; /* Ajusta la altura según tu logo */
+    left: 88%;
+    width: 7%;
+    height: 7%; 
+    top: 1%;
+
   }
-  h1{
-    color: red;
-    font-size: 40px; /*tamaño de fuente*/
- 
-  }
-  ul li{
-    margin-top: 13px;
-    font-size: 15px; /*tamaño de fuente*/
-    display:inline-block; /*posicionar orisontalmente*/
-    padding: 0px 5px; /*distancia (separacion entre si)*/
+  
+  .logo  {
     
- 
+    height: 40px; /* Ajusta la altura según tu logo */
+    
+    /*ajustes de tamaño*/
+    width: 15%;
+    height: 15%; 
   }
-  a{
-    color: rgb(250, 250, 250);
+  
+  nav ul li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display:inline-flex;
+  }
+  
+  nav ul  {
+    margin-left: 20px;
+  }
+  
+  nav ul li a {
+    color: rgb(253, 252, 252);
     text-decoration: none;
-    font-size: 200%;
- 
+    padding: 10% -10%;
+    border-radius: 50%;
+    transition: background-color 0.3s ease;
+    /*la posision fixed ayuda a fijar el boton y no se mueva con la pantalla*/
+    position: fixed;
+    transform: translate3d(-50, -50, 0);
+    width: 50px;
+    height: 50px;
   }
-  /*aca se acomoda a que color 
-  se dsea cambiar al poner el cursor*/
-  a:hover {
-    color: rgb(255, 0, 0);
+  
+  nav ul li a:hover {
+    background-color: #080707;
   }
-
-
-h1{
-    position:relative;
+  img{
+    width: 100%; /* Las imágenes ocuparán todo el ancho de su contenedor */
+    height: auto; /* Mantienen la proporción original */
+    max-width: 100%; /* Puedes ajustar este valor para limitar el tamaño máximo */
+  }
+  .menu { 
+    color: rgba(39, 167, 45, 0);
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 50px;
+    border: 5px solid #aa171700;
+    padding: 8px;
     text-align: center;
-    color: red;
-    font-family:Arial, Helvetica, sans-serif;
-    font-size: 250%;
-    
-}
-img{
-    position: relative;
-    margin-top: 55px;/*margen superior*/
-    margin-left: 0% ;/*ajustar la posicion en el eje X */
-    width: 100%; /*ajustar tamaño de imagen*/
-    height: auto;
-}
-.imgprod{
-    position: relative;
-    margin-top: 0px;/*margen superior*/
-    margin-left: 0% ;/*ajustar la posicion en el eje X */
-    width: 100%; /*ajustar tamaño de imagen*/
-    height: auto;
-}
+    margin-top: 14%;
+    margin-left: 0%;
+    border-collapse: collapse;
+    width: 100%; /* Ancho de la tabla */
 
-p{
-    position:relative;
+  }
+  .micheladas{
+    margin-top: 2%; /*espasio superior*/
+    margin-left: 10%; /*espacio lateral izquierdo*/
+    border-collapse: collapse;
+    width: 80%; /* Ancho de la tabla */
+  }
+  
+  .cerveza {
+    margin-top: 20%;
+    margin-left: 10%;
+    border-collapse: collapse;
+    width: 80%; /* Ancho de la tabla */
+    
+  }
+  .informacion{
+
+    color: rgb(74, 20, 223);
+    font-family:inherit;
+    font-size: 50px;
+    border: 5px solid #e7c5c500;
+    padding: 8px;
+    text-align: center ;
+    margin-top: 10%;
+    margin-left: 10%;
+    margin-bottom: 80%;
+    border-collapse: collapse;
+    width: 80%; /* Ancho de la tabla */
+  }
+  
+  
+  td {
+    
+    border: 10px dotted #fffb0042;
+    padding: 1px;
     text-align: center;
-    color: rgb(253, 251, 251);
-    font-family:sans-serif;
-    font-size: 150%;
-    max-width: 90%;
-    margin-left: 18px;
-
-}
-table{
-    margin-top: 20px; /*margen superior*/
-    position: relative;
-    margin-left: 10% ;/*ajustar la posicion en el eje X */
-    width: 80%; /*ancho de tabla*/
-    color: black; /*color de bardes*/
-    border: 5px solid rgb(248, 247, 247); /*ancho y tipo de borde*/
-    
-}
-
-h6{
-    /*descripciones*/
-    margin-top: 0.5px;
-    color: rgb(187, 171, 171);
-    font-size: 110%;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    line-height: 120%;
-    margin-bottom: 20px;
-}
-h3{
+  }
+  
+  th{
+    line-height: 0.3;
+    color: rgb(244, 248, 245);
+    font: oblique bold 50px cursive;
+    margin-left: 0%;
+  }
+  h2{
+    line-height: 0.5;
+    color: #ffffff;
+    font-size: 65px;
+  }
+  h3{
     /*precios*/
-    margin-top: 1px;
-    color: yellow;
-    font-size: 200%;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    line-height: 1px;
-    margin-bottom: 30px;
-
-}
-h2{
-    /*titulos*/
-    color: rgb(248, 245, 245);
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 200%;
-    line-height: 100%;
-    margin-bottom: 15px;
-
-}
-
-.final{
-    position: relative;
-    margin-left: 35% ;/*ajustar la posicion en el eje X */
-    width: 30%; /*ajustar tamaño de imagen*/
-    height: auto;
-}
-
-/* creacion del efecto*/
-@keyframes show {
-    from{
-        opacity: 0;
-        scale: 25%;
-    }
-    to{
-        opacity: 1;
-        scale: 100%;
-    }
+    line-height: 0.1;
+    color: #fbff00;
+    font: oblique bold  45px sans-serif;
+  }
+  h4{
+    line-height: 0.1;
+    color: #ffffff;
+    font-size: 40px;
+    font-family: 'Times New Roman', Times, serif;
+    ;
     
-}
-/*aca elegimos a quienes se aplica el efecto*/
-img, table {
-    view-timeline-name: --image ;
-    view-timeline-axis: block ;
-     animation-timeline: --image ;
-     animation-name: show ;
-     animation-range: entry 4px cover 250px; /* el inicio se da con
-      la imagen al tanto% y se ve en su totalidad al tanto% */
-     animation-fill-mode: both;/*que sea en reves tambien el efecto */
-
-
-}
-
-h5{
-    color: yellow;
-    margin-left:5% ;
-    margin-right: 5% ;
-    text-align: center;
-    font-size: 150%;
-    margin-bottom: 10%;
-    line-height: 100%;
-   
+  }
+  h5{
     
-}
-.publico{
-    color: black;
-    background: #fd0000;
+    color: #fbff00;
+    font: oblique bold 90px cursive;
+    margin: auto;
+  }
+  p{
+    line-height: 0;
+    color: #ffffff;
+    font: oblique bold 25px cursive;
+    margin: auto;
+  }
+  
+  a{
+    color:black;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+     text-decoration: none;
+     
+  }
+  .publicidad{
+    color: rgba(0, 248, 41, 0.808);
+    font-family:inherit;
+    font-size: 50px;
+    border: 5px solid #f5f2f200;
+    padding: 8px;
+    text-align: center ;
+    margin-top: 0%;
+    margin-left: 10%;
+    border-collapse: collapse;
+    width: 80%; /* Ancho de la tabla */
+  }
+  button {
+    background: #ffee00d2;
     font-family: inherit;
     padding: 0.6em 1.3em;
     font-weight: 900;
-    font-size: 18px;
-    border: 3px solid black;
+    font-size: 50px;
+    border: 3px solid white;
     border-radius: 0.4em;
     box-shadow: 0.1em 0.1em;
     cursor: pointer;
     
   }
   
-  .publico:hover {
+  button:hover {
     transform: translate(-0.05em, -0.05em);
     box-shadow: 0.15em 0.15em;
   }
   
-  .publico:active {
+  button:active {
     transform: translate(0.05em, 0.05em);
     box-shadow: 0.05em 0.05em;
   }
   
+  /* creacion del efecto*/
+@keyframes show {
+  from{
+      opacity: 0;
+      scale: 25%;
+  }
+  to{
+      opacity: 1;
+      scale: 100%;
+  }
+  
+}
+/*aca elegimos a quienes se aplica el efecto*/
+img, table {
+  view-timeline-name: --image ;
+  view-timeline-axis: block ;
+   animation-timeline: --image ;
+   animation-name: show ;
+   animation-range: entry 10% cover 30%; /* el inicio se da con
+    la imagen al tanto% y se ve en su totalidad al tanto% */
+   animation-fill-mode: both;/*que sea en reves tambien el efecto */
 
-DIV{
-    text-align: center;
+
 }
 
-.vinculo{
-        
-    /*la posision fixed ayuda a fijar el boton y no se mueva con la pantalla*/
-    position: fixed;
-    transform: translate3d(-50, -50, 0);
-    /*movemos el div a la isquierda disminuye derecha aumenta.*/
-    left: 83%;
-    /*movemos el div hacia arriba disminuyendo, abajo aumenta.*/
-    top: 80%;
-    /*tamaño del icono*/
-    width: 13%;
-    height: 13%; 
-    
-}
 
 
-    
-   
-    
+  
+  
+  
+ 
