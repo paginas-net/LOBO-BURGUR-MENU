@@ -1,7 +1,7 @@
 
 body{
   /*color de fondo*/
-  background-color: black; 
+  background-color: rgb(47, 47, 47); 
   /*ingresamos la imagen*/
   background-image: url();
   /*hacemos que no sse repita*/
@@ -200,7 +200,7 @@ header {
     width: 80%; /* Ancho de la tabla */
   }
   button {
-    background: #ffee00d2;
+    background: #ffee00c5;
     font-family: inherit;
     padding: 0.6em 1.3em;
     font-weight: 900;
