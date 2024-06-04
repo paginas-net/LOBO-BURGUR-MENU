@@ -1,9 +1,24 @@
 
 body{
-  background: #232526;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to right, #414345, #232526);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to right, #414345, #232526); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
+  /*color de fondo*/
+  background-color: rgb(0, 0, 0);
+  /*ingresamos la imagen*/
+  background-image: url(Menu\ Restaurante\ Llamativo\ Negro\ Mostaza.jpg);
+  /*hacemos que no sse repita*/
+  background-repeat: no-repeat;
+  /*centrar la imagen*/
+  background-position: center ;
+  /*ajustar la posicion eje x, eje y (centrar= center center)*/
+  background-position: 100% 0%;
+  /*aca podemos acomodar el espacio de la pagina en caso que la imagen 
+  no se puedaver completa */
+  height: auto;
+  
+  /* evitar el movimiento de la imagen de fondo*/
+  background-attachment: fixed;
+  /*para que la imagen cubra la pantalla*/
+  background-size: 100%;
+}
 
 
 header {
@@ -156,7 +171,7 @@ header {
   h5{
     
     color: #fbff00;
-    font: bold 90px monospace;
+    font: oblique bold 90px status-bar;
     margin: auto;
   }
   p{
