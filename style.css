@@ -1,9 +1,9 @@
 
 body{
   /*color de fondo*/
-  background-color: rgb(0, 0, 0);
+  background-color: black; 
   /*ingresamos la imagen*/
-  background-image: url(Menu\ Restaurante\ Llamativo\ Negro\ Mostaza.jpg);
+  background-image: url();
   /*hacemos que no sse repita*/
   background-repeat: no-repeat;
   /*centrar la imagen*/
@@ -177,7 +177,7 @@ header {
   p{
     line-height: 0;
     color: #ffffff;
-    font: oblique bold 25px cursive;
+    font: oblique bold 25px sans-serif;
     margin: auto;
   }
   
