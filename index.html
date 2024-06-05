@@ -1,12 +1,11 @@
-<!DOCTYPE html>
-<html>
-<head>
- 
-    <meta charset="UTF-8" />
-    <title>LOBO</title>
-    <link rel="stylesheet" href="style.css">
-    
 
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>MENU</title>
     <style>
         body {
       display: flex;
@@ -20,32 +19,29 @@ background: linear-gradient(to right, #414345, #232526); /* W3C, IE 10+/ Edge, F
 
 
     }
-       
-      </style>
 
+
+        
+    </style>
 </head>
-
-
-
-   
-
-    <header>
+<header>
         
     <img class="logo" src="logo.png" alt="Logo" >
         
         <nav>
           <ul>
-            <li class="domicilios"><a class="domicilios" href="#">domicilios: </a></li>
-            <li><a class="contacto" href="https://api.whatsapp.com/send?
-              phone=573142020784" ><img src="logo whatsapp.png" background-attachment="fixed" alt="" ></a>
-            </li>
+
+            <li><img class="imagendew" src="logo whatsapp.png" background-attachment="fixed" alt="" ><a class="contacto" href="https://api.whatsapp.com/send?
+                phone=573142020784" ></a>
+              </li>
+            
+            
 
             
           </ul>
         </nav>
       </header>
 
-      
 
       <div><table class="menu">
         <tr>
@@ -63,15 +59,29 @@ background: linear-gradient(to right, #414345, #232526); /* W3C, IE 10+/ Edge, F
           </tr>
           </div>
 
-      <div><table class="micheladas">
-        <tr>
-            <td>
-              <h5>Sandwich</h5>
-            </td> 
+
+
+
+
+
+
+
+<body>
+
+
+
+    <table class="micheladas">
+        <thead>
+          <tr>
+            <th></th>
           </tr>
+        </thead>
+        <tbody>
           <tr>
             <td>
-              <h2>SENCILLO</h2>
+              <button class="btn" onclick="mostrarFila(1)">SANDWICH</button>
+              <div class="fila-oculta" id="fila1">
+                <h2>SENCILLO</h2>
               <p>Pan Artesanal, Pollo O Carne, Lechuga, Tomate, Jamón,
                 Queso</p>
               <h3>6.000</h3>
@@ -79,19 +89,16 @@ background: linear-gradient(to right, #414345, #232526); /* W3C, IE 10+/ Edge, F
               <p>Pan Artesanal, Pollo, Carne, Lechuga, Tomate, Jamón,
                 Queso</p>
               <h3>5.000</h3>
+              </div>
             </td>
-            
-          </div>
-         
-          <div><table class="micheladas">
-            <tr>
-                <td>
-                  <h5>EMPANADAS</h5>
-                </td> 
-              </tr>
-              <tr>
-                <td>
-                  <h2>CARNE</h2>
+          </tr>
+
+    
+          <tr>
+            <td>
+              <button class="btn" onclick="mostrarFila(2)">EMPANADAS</button>
+              <div class="fila-oculta" id="fila2">
+                <h2>CARNE</h2>
                   <h3>2.500</h3>
                   <h2>POLLO</h2>
                   <h3>2.500</h3>
@@ -99,19 +106,18 @@ background: linear-gradient(to right, #414345, #232526); /* W3C, IE 10+/ Edge, F
                   <h3>2.500</h3>
                   <h2>DESMECHADA</h2>
                   <h3>2.500</h3>
-                </td>
-                
+                  <h6>llllllllllllllllllllllllllllllllllllllll
+                    lllllllllllllllllllllllllllllllllllllll                            
+                  </h6>
               </div>
+            </td>
+          </tr>
 
-              <div><table class="micheladas">
-                <tr>
-                    <td>
-                      <h5>AREPAS</h5>
-                    </td> 
-                  </tr>
-                  <tr>
-                    <td>
-                      <h2>SENCILLA</h2>
+          <tr>
+            <td>
+              <button class="btn" onclick="mostrarFila(3)">AREPAS</button>
+              <div class="fila-oculta" id="fila3">
+                <h2>SENCILLA</h2>
                       <p>Pollo, Queso, Tomate, Lechuga.
                       </p>
                       <h3>7.000</h3>
@@ -129,58 +135,45 @@ background: linear-gradient(to right, #414345, #232526); /* W3C, IE 10+/ Edge, F
                         Tomate, Salsas                        
                         </p>
                       <h3>13.000</h3>
-                      
-                    </td>
-                    
-                  </div>
+              </div>
+            </td>
+          </tr>
 
-
-                  <div><table class="micheladas">
-                    <tr>
-                        <td>
-                          <h5>DORILOCOS</h5>
-                        </td> 
-                      </tr>
-                      <tr>
-                        <td>
-                          <h2>SENCILLO</h2>
+          <tr>
+            <td>
+              <button class="btn" onclick="mostrarFila(4)">DORILOCOS</button>
+              <div class="fila-oculta" id="fila4">
+                <h2>SENCILLO</h2>
                           <h3>2.500</h3>
                           <h2>MIXTO</h2>
                           <h3>2.500</h3>
+                          <h6>llllllllllllllllllllllllllllllllllllllll
+                            lllllllllllllllllllllllllllllllllllllll                            
+                          </h6>
+              </div>
+            </td>
+          </tr>
 
-                        </td>
-                        
-                      </div>
-
-
-                      <div><table class="micheladas">
-                        <tr>
-                            <td>
-                              <h5>ARROZ CHINO</h5>
-                            </td> 
-                          </tr>
-                          <tr>
-                            <td>
-                              <h2>PERSONAL</h2>
+          <tr>
+            <td>
+              <button class="btn" onclick="mostrarFila(5)">ARROZ CHINO</button>
+              <div class="fila-oculta" id="fila5">
+                <h2>PERSONAL</h2>
                               <h3>2.500</h3>
                               <h2>DOBLE</h2>
                               <h3>2.500</h3>
-    
-                            </td>
-                            
-                          </div>
+                              <h6>llllllllllllllllllllllllllllllllllllllll
+                                lllllllllllllllllllllllllllllllllllllll                            
+                              </h6>
+              </div>
+            </td>
+          </tr>
 
-
-
-                          <div><table class="micheladas">
-                            <tr>
-                                <td>
-                                  <h5>HAMBURGUESAS</h5>
-                                </td> 
-                              </tr>
-                              <tr>
-                                <td>
-                                  <h2>CENCILLA</h2>
+          <tr>
+            <td>
+              <button class="btn" onclick="mostrarFila(6)">HAMBURGUESAS</button>
+              <div class="fila-oculta" id="fila6">
+                <h2>CENCILLA</h2>
                                   <p>Pan Artesanal, Carne de la casa, Queso, Jamón, Cebolla
                                     Caramelizada, lechuga, Tomate, Papas en Fosforo.                                    
                                   </p>
@@ -213,181 +206,160 @@ background: linear-gradient(to right, #414345, #232526); /* W3C, IE 10+/ Edge, F
                                     queso, tocineta, chorizo, jamon, salsa especial.                     
                                     </p>
                                   <h3>20.000</h3>
-                                  
-                                </td>
-                                
-                              </div>
+              </div>
+            </td>
+          </tr>
 
-                              <div><table class="micheladas">
-                                <tr>
-                                    <td>
-                                      <h5>PERROS CALIENTES</h5>
-                                    </td> 
-                                  </tr>
-                                  <tr>
-                                    <td>
-                                      <h2>SENCILLO</h2>
-                                      <p>Pan artesanal, Salchicha, Queso, Papas en fosforo.                                   
-                                      </p>
-                                      <h3>5.000</h3>
-                                      <h2>CHORIPERRO</h2>
-                                      <p>Pan artesanal, Chorizo, Tocineta, Queso, Papas en
-                                        Fosforo.
-                                        </p>
-                                      <h3>7.000</h3>
-                                      <h2>MIXTO</h2>
-                                      <p>Pan artesanal, Salchicha, Pollo, Carne, Queso, Papas en
-                                        fosforo, Tocineta.                                                                           
-                                        </p>
-                                      <h3>9.000</h3>
-                                      <h2>HAWAIANO</h2>
-                                      <p>Pan artesanal, Salchicha Americana, Queso, Tocineta,
-                                        Piña Caramelizada, Papas en Fosforo.                      
-                                        </p>
-                                      <h3>10.000</h3>
-                                      <h2>RANCHERO</h2>
-                                      <p>Pan artesanal, Salchicha Americana, Tocineta, Carne
-                                        Mechada, Queso, Maíz tierno, Papas en fosforo.                      
-                                        </p>
-                                      <h3>12.000</h3>
-                                      
-                                      
-                                    </td>
-                                    
-                                  </div>
+          <tr>
+            <td>
+              <button class="btn" onclick="mostrarFila(7)">PERROS CALIENTES</button>
+              <div class="fila-oculta" id="fila7">
+                <h2>SENCILLO</h2>
+                <p>Pan artesanal, Salchicha, Queso, Papas en fosforo.                                   
+                </p>
+                <h3>5.000</h3>
+                <h2>CHORIPERRO</h2>
+                <p>Pan artesanal, Chorizo, Tocineta, Queso, Papas en
+                  Fosforo.
+                  </p>
+                <h3>7.000</h3>
+                <h2>MIXTO</h2>
+                <p>Pan artesanal, Salchicha, Pollo, Carne, Queso, Papas en
+                  fosforo, Tocineta.                                                                           
+                  </p>
+                <h3>9.000</h3>
+                <h2>HAWAIANO</h2>
+                <p>Pan artesanal, Salchicha Americana, Queso, Tocineta,
+                  Piña Caramelizada, Papas en Fosforo.                      
+                  </p>
+                <h3>10.000</h3>
+                <h2>RANCHERO</h2>
+                <p>Pan artesanal, Salchicha Americana, Tocineta, Carne
+                  Mechada, Queso, Maíz tierno, Papas en fosforo.                      
+                  </p>
+                <h3>12.000</h3>
+              </div>
+            </td>
+          </tr>
 
+          <tr>
+            <td>
+              <button class="btn" onclick="mostrarFila(8)">PEPITO</button>
+              <div class="fila-oculta" id="fila8">
+                <h2>FULL</h2>
+                <p>Pan artesanal, Salchicha Ranchera, Carne, Pollo,
+                  Tocineta, Papas en Fosforo, Aguacate, Queso, Carne
+                  Mechada, Tomate, Lechuga, Cebolla, Maíz Tierno.                                            
+                </p>
+                <h3>35.000</h3>
+              </div>
+            </td>
+          </tr>
 
-                                  <div><table class="micheladas">
-                                    <tr>
-                                        <td>
-                                          <h5>PEPITO</h5>
-                                        </td> 
-                                      </tr>
-                                      <tr>
-                                        <td>
-                                          <h2>FULL</h2>
-                                          <p>Pan artesanal, Salchicha Ranchera, Carne, Pollo,
-                                            Tocineta, Papas en Fosforo, Aguacate, Queso, Carne
-                                            Mechada, Tomate, Lechuga, Cebolla, Maíz Tierno.                                            
-                                          </p>
-                                          <h3>35.000</h3>
-                                          
-                                          
-                                        </td>
-                                        
-                                      </div>
+          <tr>
+            <td>
+              <button class="btn" onclick="mostrarFila(9)">MAZORCADA</button>
+              <div class="fila-oculta" id="fila9">
+                <h2>POLLO O CARNE</h2>
+                <p>Maíz Tierno, Papas en Fosforo, Pollo. Maduritos,
+                  Tocineta, Queso, Salsas.                                                
+                </p>
+                <h3>14.000</h3>
+                <h2>MIXTA</h2>
+                <p>Maíz Tierno, Papas en Fosforo, Pollo. Carne, Chorizo,
+                  Maduritos, Tocineta, Queso, Salsas
+                  </p>
+                <h3>20.000</h3>
+                <h2>FAMILIAR</h2>
+                <p>Maíz Tierno, Papas en Fosforo, Pollo. Carne, Chorizo,
+                  Maduritos, Tocineta, Queso, Gauacamole, Salsas.                                                
+                  </p>
+                <h3>35.000</h3>
+              </div>
+            </td>
+          </tr>
 
-                                      <div><table class="micheladas">
-                                        <tr>
-                                            <td>
-                                              <h5>MAZORCADA</h5>
-                                            </td> 
-                                          </tr>
-                                          <tr>
-                                            <td>
-                                              <h2>POLLO O CARNE</h2>
-                                              <p>Maíz Tierno, Papas en Fosforo, Pollo. Maduritos,
-                                                Tocineta, Queso, Salsas.                                                
-                                              </p>
-                                              <h3>14.000</h3>
-                                              <h2>MIXTA</h2>
-                                              <p>Maíz Tierno, Papas en Fosforo, Pollo. Carne, Chorizo,
-                                                Maduritos, Tocineta, Queso, Salsas
-                                                </p>
-                                              <h3>20.000</h3>
-                                              <h2>FAMILIAR</h2>
-                                              <p>Maíz Tierno, Papas en Fosforo, Pollo. Carne, Chorizo,
-                                                Maduritos, Tocineta, Queso, Gauacamole, Salsas.                                                
-                                                </p>
-                                              <h3>35.000</h3>
-                                              
-                                              
-                                            </td>
-                                            
-                                          </div>
-
-                                          <div><table class="micheladas">
-                                            <tr>
-                                                <td>
-                                                  <h5>SALCHIPAPAS</h5>
-                                                </td> 
-                                              </tr>
-                                              <tr>
-                                                <td>
-                                                  <h2>SENCILLA</h2>
-                                                  <p>papa Francesa, Salchicha, Salsas, Papa Criolla, Queso.                                   
-                                                  </p>
-                                                  <h3>10.000</h3>
-                                                  <h2>POLLO</h2>
-                                                  <p>Papa Francesa, Salchicha, Pollo, Tocineta, Salsas, Papa
-                                                    Criolla, Queso
-                                                    </p>
-                                                  <h3>13.000</h3>
-                                                  <h2>AMERICANA</h2>
-                                                  <p>Papa Francesa, Salchicha. Americana, Carne
-                                                    Desmechada, Tocineta, Papa criolla, Queso, Maíz
-                                                    Tierno.                                                                           
-                                                    </p>
-                                                  <h3>15.000</h3>
-                                                  <h2>MIXTA</h2>
-                                                  <p>Pan artesanal, Salchicha Americana, Queso, Tocineta,
-                                                    Piña CarPapa Francesa, Pollo, Carne, Salchicha,
-                                                    Chorizo. Papa Criolla, Queso, Tocineta.amelizada,
-                                                    Papas en Fosforo.                     
-                                                    </p>
-                                                  <h3>15.000</h3>
-                                                  <h2>DOBLE</h2>
-                                                  <p>Papa Francesa, Pollo, Carne, Salchicha, Chorizo. Papa
-                                                    Criolla, Queso, Tocineta.                                                                        
-                                                    </p>
-                                                  <h3>22.000</h3>
-                                                  <h2>FAMILIAR</h2>
-                                                  <p>Papa Francesa, Pollo, Carne, Salchicha, Chorizo. Papa
-                                                    Criolla, Queso, Tocineta.                                                                        
-                                                    </p>
-                                                  <h3>38.000</h3>
-                                                  
-                                                  
-                                                </td>
-                                                
-                                              </div>
-
-                                              <div><table class="micheladas">
-                                                <tr>
-                                                    <td>
-                                                      <h5>PATACON</h5>
-                                                    </td> 
-                                                  </tr>
-                                                  <tr>
-                                                    <td>
-                                                      <h2>CANOA</h2>
-                                                      <p>Platano naduro, vegetales, carne desmechada, chorizo,
-                                                        maiz, queso, tocineta, salsas                                                
-                                                      </p>
-                                                      <h3>13.000</h3>
-                                                      <h2>SENCILLO</h2>
-                                                      <p>Plátano Verde, o Maduro, Carne de la casa, Pollo,
-                                                        Queso, Jamón, Tocineta, Lechuga, Cebolla. Papas en
-                                                        Fosforo
-                                                        </p>
-                                                      <h3>18.000</h3>
-                                                      <h2>MIXTO</h2>
-                                                      <p>Plátano Verde, o Maduro, Carne de la casa, Carne
-                                                        Mechada, Pollo, Queso, Jamón, Tocineta, Chorizo,
-                                                        Lechuga, Cebolla. Papas en Fosforo.                                              
-                                                        </p>
-                                                      <h3>22.000</h3>
-                                                      
-                                                      
-                                                    </td>
-                                                    
-                                                  </div>
+          <tr>
+            <td>
+              <button class="btn" onclick="mostrarFila(10)">SALCHIPAPAS</button>
+              <div class="fila-oculta" id="fila10">
+                <h2>SENCILLA</h2>
+                <p>papa Francesa, Salchicha, Salsas, Papa Criolla, Queso.                                   
+                </p>
+                <h3>10.000</h3>
+                <h2>POLLO</h2>
+                <p>Papa Francesa, Salchicha, Pollo, Tocineta, Salsas, Papa
+                  Criolla, Queso
+                  </p>
+                <h3>13.000</h3>
+                <h2>AMERICANA</h2>
+                <p>Papa Francesa, Salchicha. Americana, Carne
+                  Desmechada, Tocineta, Papa criolla, Queso, Maíz
+                  Tierno.                                                                           
+                  </p>
+                <h3>15.000</h3>
+                <h2>MIXTA</h2>
+                <p>Pan artesanal, Salchicha Americana, Queso, Tocineta,
+                  Piña CarPapa Francesa, Pollo, Carne, Salchicha,
+                  Chorizo. Papa Criolla, Queso, Tocineta.amelizada,
+                  Papas en Fosforo.                     
+                  </p>
+                <h3>15.000</h3>
+                <h2>DOBLE</h2>
+                <p>Papa Francesa, Pollo, Carne, Salchicha, Chorizo. Papa
+                  Criolla, Queso, Tocineta.                                                                        
+                  </p>
+                <h3>22.000</h3>
+                <h2>FAMILIAR</h2>
+                <p>Papa Francesa, Pollo, Carne, Salchicha, Chorizo. Papa
+                  Criolla, Queso, Tocineta.                                                                        
+                  </p>
+                <h3>38.000</h3>
+              </div>
+            </td>
+          </tr>
 
 
-    </table>
 
-  </table>
-  <div>
+          <tr>
+            <td>
+              <button class="btn" onclick="mostrarFila(11)">PATACON</button>
+              <div class="fila-oculta" id="fila11">
+                <h2>CANOA</h2>
+                <p>Platano naduro, vegetales, carne desmechada, chorizo,
+                  maiz, queso, tocineta, salsas                                                
+                </p>
+                <h3>13.000</h3>
+                <h2>SENCILLO</h2>
+                <p>Plátano Verde, o Maduro, Carne de la casa, Pollo,
+                  Queso, Jamón, Tocineta, Lechuga, Cebolla. Papas en
+                  Fosforo
+                  </p>
+                <h3>18.000</h3>
+                <h2>MIXTO</h2>
+                <p>Plátano Verde, o Maduro, Carne de la casa, Carne
+                  Mechada, Pollo, Queso, Jamón, Tocineta, Chorizo,
+                  Lechuga, Cebolla. Papas en Fosforo.                                              
+                  </p>
+                <h3>22.000</h3>
+              </div>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    
+      <script>
+        function mostrarFila(numeroFila) {
+          var fila = document.getElementById("fila" + numeroFila);
+          if (fila.style.display === "none") {
+            fila.style.display = "table-row";
+          } else {
+            fila.style.display = "none";
+          }
+        }
+      </script>
+
+<div>
     <table class="informacion">
 
       <th>
@@ -396,9 +368,6 @@ background: linear-gradient(to right, #414345, #232526); /* W3C, IE 10+/ Edge, F
        </th>
     
       <tr>
-
-        
-       
             
         <th>
            <h4>HORARIO DE ATENCION </h4>
@@ -428,13 +397,5 @@ background: linear-gradient(to right, #414345, #232526); /* W3C, IE 10+/ Edge, F
         
         
     </div>
-   
-    
-
-    
-
-
-
 </body>
-
 </html>

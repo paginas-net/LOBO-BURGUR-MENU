@@ -1,255 +1,284 @@
 
+
 body{
-  /*color de fondo*/
-  
-  /*ingresamos la imagen*/
-  background-image: url();
-  /*hacemos que no sse repita*/
-  background-repeat: no-repeat;
-  /*centrar la imagen*/
-  background-position: center ;
-  /*ajustar la posicion eje x, eje y (centrar= center center)*/
-  background-position: 100% 0%;
-  /*aca podemos acomodar el espacio de la pagina en caso que la imagen 
-  no se puedaver completa */
-  height: auto;
-  
-  /* evitar el movimiento de la imagen de fondo*/
-  background-attachment: fixed;
-  /*para que la imagen cubra la pantalla*/
-  background-size: 100%;
-}
-
-
-header {
-    position: fixed;
-    top: 0%;
-    left: 0px;
-    width: 100%;
-    background-color: rgba(220, 224, 0, 0);
-    padding: 10px 50px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    z-index: 1000; /* Asegura que el menú esté por encima del resto del contenido */
-  }
-
-  .domicilios{
-    /*letrero junnto al logo de whatsapp*/
-    height: 90px; /* Ajusta la altura según tu logo */
-    left: 63%;
-    font-size: 40px; /*tamaño de letra*/
-    font-family: 'Times New Roman', Times, serif;
-  }
-
-  .contacto{
-    /* logo de whatsapp*/
-    height: 7px; /* Ajusta la altura según tu logo */
-    left: 88%;
-    width: 7%;
-    height: 7%; 
-    top: 1%;
-
-  }
-  
-  .logo  {
+    /*color de fondo*/
     
-    height: 40px; /* Ajusta la altura según tu logo */
+    /*ingresamos la imagen*/
+    background-image: url();
+    /*hacemos que no sse repita*/
+    background-repeat: no-repeat;
+    /*centrar la imagen*/
+    background-position: center ;
+    /*ajustar la posicion eje x, eje y (centrar= center center)*/
+    background-position: 100% 0%;
+    /*aca podemos acomodar el espacio de la pagina en caso que la imagen 
+    no se puedaver completa */
+    height: auto;
     
-    /*ajustes de tamaño*/
-    width: 15%;
-    height: 15%; 
+    /* evitar el movimiento de la imagen de fondo*/
+    background-attachment: fixed;
+    /*para que la imagen cubra la pantalla*/
+    background-size: 100%;
   }
   
-  nav ul li {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display:inline-flex;
-  }
   
-  nav ul  {
-    margin-left: 20px;
-  }
+  header {
+      position: fixed;
+      top: 0%;
+      left: 0px;
+      width: 100%;
+      background-color: rgba(220, 224, 0, 0);
+      padding: 15px 30px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      z-index: 1000; /* Asegura que el menú esté por encima del resto del contenido */
+    }
+
+    .imagendew{
+
+        position: fixed;
+      top: 0%;
+      left: 0px;
+      width: 10%;
+      background-color: rgba(220, 224, 0, 0);
+      padding: 15px 340px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      z-index: 1000; /* Asegura que el menú esté por encima del resto del contenido */
+    }
   
-  nav ul li a {
-    color: rgb(253, 252, 252);
-    text-decoration: none;
-    padding: 10% -10%;
-    border-radius: 50%;
-    transition: background-color 0.3s ease;
-    /*la posision fixed ayuda a fijar el boton y no se mueva con la pantalla*/
-    position: fixed;
-    transform: translate3d(-50, -50, 0);
-    width: 50px;
-    height: 50px;
-  }
+    .domicilios{
+      /*letrero junnto al logo de whatsapp*/
+      height: 90px; /* Ajusta la altura según tu logo */
+      left: 63%;
+      font-size: 40px; /*tamaño de letra*/
+      font-family: 'Times New Roman', Times, serif;
+    }
   
-  nav ul li a:hover {
-    background-color: #080707;
-  }
-  img{
-    width: 100%; /* Las imágenes ocuparán todo el ancho de su contenedor */
-    height: auto; /* Mantienen la proporción original */
-    max-width: 100%; /* Puedes ajustar este valor para limitar el tamaño máximo */
-  }
-  .menu { 
-    color: rgba(39, 167, 45, 0);
-    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    font-size: 50px;
-    border: 5px solid #aa171700;
-    padding: 8px;
+    .contacto{
+      /* logo de whatsapp*/
+      height: 5px; /* Ajusta la altura según tu logo */
+      left: 87%;
+      width: 7%;
+      height: 7%; 
+      top: 1%;
+  
+    }
+    
+    .logo  {
+      
+      height: 45px; /* Ajusta la altura según tu logo */
+      
+      /*ajustes de tamaño*/
+      width: 15%;
+      height: 15%; 
+    }
+    
+    nav ul li {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display:inline-flex;
+    }
+    
+    nav ul  {
+      margin-left: 20px;
+    }
+    
+    nav ul li a {
+      color: rgb(253, 252, 252);
+      text-decoration: none;
+      padding: 10% -10%;
+      border-radius: 50%;
+      transition: background-color 0.3s ease;
+      /*la posision fixed ayuda a fijar el boton y no se mueva con la pantalla*/
+      position: fixed;
+      transform: translate3d(-50, -50, 0);
+      width: 50px;
+      height: 50px;
+    }
+    
+    nav ul li a:hover {
+      background-color: #080707;
+    }
+    img{
+      width: 100%; /* Las imágenes ocuparán todo el ancho de su contenedor */
+      height: auto; /* Mantienen la proporción original */
+      max-width: 150%; /* Puedes ajustar este valor para limitar el tamaño máximo */
+    }
+    .menu { 
+      color: rgba(39, 167, 45, 0);
+      font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+      font-size: 50px;
+      border: 5px solid #d70b0b00;
+      padding: 8px;
+      text-align: center;
+      margin-top: 14%;
+      margin-left: 8%;
+      border-collapse: collapse;
+      width:84%; /* Ancho de la tabla */
+  
+    }
+    .micheladas{
+      margin-top: 2%; /*espasio superior*/
+      margin-left: 10%; /*espacio lateral izquierdo*/
+      border-collapse: collapse;
+      width: 80%; /* Ancho de la tabla */
+
+      
+  
+    }
+    /* Estilos para las filas ocultas */
+    .fila-oculta {
+        
     text-align: center;
-    margin-top: 14%;
-    margin-left: 0%;
-    border-collapse: collapse;
-    width: 100%; /* Ancho de la tabla */
-
-  }
-  .micheladas{
-    margin-top: 2%; /*espasio superior*/
-    margin-left: 10%; /*espacio lateral izquierdo*/
-    border-collapse: collapse;
-    width: 80%; /* Ancho de la tabla */
-  }
+    display: none;
+    
+      }
+    
+    .cerveza {
+      margin-top: 20%;
+      margin-left: 10%;
+      border-collapse: collapse;
+      width: 80%; /* Ancho de la tabla */
+      
+    }
+    .informacion{
   
-  .cerveza {
-    margin-top: 20%;
-    margin-left: 10%;
-    border-collapse: collapse;
-    width: 80%; /* Ancho de la tabla */
+      color: rgb(246, 246, 246);
+      font-family:inherit;
+      font-size: 50px;
+      border: 5px solid #e40e0e00;
+      padding: 8px;
+      text-align: center ;
+      margin-top: 10%;
+      margin-left: 10%;
+      margin-bottom: 20%;
+      border-collapse: collapse;
+      width: 80%; /* Ancho de la tabla */
+    }
+    
+    
+    td {
+      
+      border: 10px dotted #fffb0000;
+      padding: 1px;
+      text-align: center;
+    }
+    
+    th{
+      line-height: 0.1;
+      color: rgb(244, 248, 245);
+      font: oblique bold 23px sans-serif;
+      margin-left: 0%;
+    }
+    h2{
+      line-height: 0.1;
+      color: #f6f6f6;
+      font-size: 35px;
+    }
+    h3{
+      /*precios*/
+      line-height: 0.1;
+      color: #fbff00;
+      font: oblique bold  45px sans-serif;
+    }
+    h4{
+      line-height: 0.1;
+      color: #fbff00;
+      font-size: 20px;
+      font-family: 'Times New Roman', Times, serif;
+      ;
+      
+    }
+    h5{
+      
+      color: #fbff00;
+      font: oblique bold 90px status-bar;
+      margin: auto;
+    }
+    h6{
+        line-height: 0;
+      color: #ffffff00;
+      font: oblique bold 20px sans-serif;
+      margin: auto;
+    }
+    p{
+      line-height: 0;
+      color: #ffffff;
+      font: oblique bold 20px sans-serif;
+      margin: auto;
+    }
+    
+    a{
+      color:black;
+      font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+       text-decoration: none;
+       
+    }
+    .publicidad{
+      color: #F39C12;
+      font-family:inherit;
+      font-size: 50px;
+      border: 5px solid #f5f2f200;
+      padding: 8px;
+      text-align: center ;
+      margin-top: 0%;
+      margin-left: 10%;
+      border-collapse: collapse;
+      width: 80%; /* Ancho de la tabla */
+    }
+    button {
+      width: max-content;
+      min-width: 300px;
+      height: 45px;
+      padding: 8px;
+      border-radius: 5px;
+      border: 2.5px solid #000000;
+      box-shadow: 0px 0px 20px -20px;
+      cursor: pointer;
+      background-color: #ff8000;
+      transition: all 0.2s ease-in-out 0ms;
+      user-select: none;
+      font: oblique bold 26px sans-serif;
+      color: black;
+        
+      }
+      
+      button:hover {
+        background-color:	#ff8000;
+        box-shadow: 0px 0px 20px -18px;
+      }
+      
+      button:active {
+        transform: scale(0.95);
+      }
+    
+    
+    
+    /* creacion del efecto*/
+  @keyframes show {
+    from{
+        opacity: 0;
+        scale: 25%;
+    }
+    to{
+        opacity: 1;
+        scale: 100%;
+    }
     
   }
-  .informacion{
-
-    color: rgb(246, 246, 246);
-    font-family:inherit;
-    font-size: 50px;
-    border: 5px solid #e7c5c500;
-    padding: 8px;
-    text-align: center ;
-    margin-top: 10%;
-    margin-left: 10%;
-    margin-bottom: 80%;
-    border-collapse: collapse;
-    width: 80%; /* Ancho de la tabla */
-  }
+  /*aca elegimos a quienes se aplica el efecto*/
+  img, table {
+    view-timeline-name: --image ;
+    view-timeline-axis: block ;
+     animation-timeline: --image ;
+     animation-name: show ;
+     animation-range: entry 10% cover 30%; /* el inicio se da con
+      la imagen al tanto% y se ve en su totalidad al tanto% */
+     animation-fill-mode: both;/*que sea en reves tambien el efecto */
   
   
-  td {
-    
-    border: 10px dotted #fffb0000;
-    padding: 1px;
-    text-align: center;
   }
-  
-  th{
-    line-height: 0.3;
-    color: rgb(244, 248, 245);
-    font: oblique bold 50px sans-serif;
-    margin-left: 0%;
-  }
-  h2{
-    line-height: 0.5;
-    color: #ffffff;
-    font-size: 65px;
-  }
-  h3{
-    /*precios*/
-    line-height: 0.1;
-    color: #fbff00;
-    font: oblique bold  45px sans-serif;
-  }
-  h4{
-    line-height: 0.1;
-    color: #ffffff;
-    font-size: 40px;
-    font-family: 'Times New Roman', Times, serif;
-    ;
-    
-  }
-  h5{
-    
-    color: #fbff00;
-    font: oblique bold 90px status-bar;
-    margin: auto;
-  }
-  p{
-    line-height: 0;
-    color: #ffffff;
-    font: oblique bold 25px sans-serif;
-    margin: auto;
-  }
-  
-  a{
-    color:black;
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-     text-decoration: none;
-     
-  }
-  .publicidad{
-    color: rgba(0, 248, 41, 0.808);
-    font-family:inherit;
-    font-size: 50px;
-    border: 5px solid #f5f2f200;
-    padding: 8px;
-    text-align: center ;
-    margin-top: 0%;
-    margin-left: 10%;
-    border-collapse: collapse;
-    width: 80%; /* Ancho de la tabla */
-  }
-  button {
-    background: #ffee00c5;
-    font-family: inherit;
-    padding: 0.6em 1.3em;
-    font-weight: 900;
-    font-size: 50px;
-    border: 3px solid white;
-    border-radius: 0.4em;
-    box-shadow: 0.1em 0.1em;
-    cursor: pointer;
-    
-  }
-  
-  button:hover {
-    transform: translate(-0.05em, -0.05em);
-    box-shadow: 0.15em 0.15em;
-  }
-  
-  button:active {
-    transform: translate(0.05em, 0.05em);
-    box-shadow: 0.05em 0.05em;
-  }
-  
-  /* creacion del efecto*/
-@keyframes show {
-  from{
-      opacity: 0;
-      scale: 25%;
-  }
-  to{
-      opacity: 1;
-      scale: 100%;
-  }
-  
-}
-/*aca elegimos a quienes se aplica el efecto*/
-img, table {
-  view-timeline-name: --image ;
-  view-timeline-axis: block ;
-   animation-timeline: --image ;
-   animation-name: show ;
-   animation-range: entry 10% cover 30%; /* el inicio se da con
-    la imagen al tanto% y se ve en su totalidad al tanto% */
-   animation-fill-mode: both;/*que sea en reves tambien el efecto */
-
-
-}
-
-
-
-  
-  
-  
- 
