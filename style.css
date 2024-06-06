@@ -39,12 +39,11 @@ body{
 
         position: fixed;
       top: 0%;
-      left: 0px;
-      width: 10%;
+      width: 10%; /*tamaño*/
       background-color: rgba(220, 224, 0, 0);
-      padding: 15px 340px;
+      padding: 15px 320px;
       display: flex;
-      justify-content: space-between;
+      justify-content: none;
       align-items: center;
       z-index: 1000; /* Asegura que el menú esté por encima del resto del contenido */
     }
@@ -59,21 +58,30 @@ body{
   
     .contacto{
       /* logo de whatsapp*/
-      height: 5px; /* Ajusta la altura según tu logo */
-      left: 87%;
-      width: 7%;
-      height: 7%; 
-      top: 1%;
+      height: 0px; /* Ajusta la altura según tu logo */
+      left: 0%;
+      width: 0%;
+      height: 0%; 
+      top: 0%;
+      border: #fbff0000 solid 5px;
+
+
+      
   
     }
     
     .logo  {
       
-      height: 45px; /* Ajusta la altura según tu logo */
-      
-      /*ajustes de tamaño*/
-      width: 15%;
-      height: 15%; 
+      position: fixed;
+      top: 0%;
+      left: 6px;
+      width: 12%; /*tamaño*/
+      background-color: rgba(220, 224, 0, 0);
+      padding: 15px 30px;  /*position*/
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      z-index: 1000; /* Asegura que el menú esté por encima del resto del contenido */
     }
     
     nav ul li {
